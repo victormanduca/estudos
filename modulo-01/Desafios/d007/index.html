@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 007</title>
+</head>
+<body>
+    <h1>Imagem Flexível</h1><hr>
+    <p>Are you seeing the full image? Try enlargingyour window to enjoy a better experience.</p>
+    <picture>
+        <source media="(max-width: 730px)" srcset="images/Astronauta-p.jpg" type="image/jpg">
+        <source media="(max-width: 1030px)" srcset="images/Astronauta-m.jpg" type="image/jpg">
+        <source media="(max-width: 1430px)" srcset="images/Astronauta-g.jpg" type="image/jpg">
+        <source media="(max-width: 1730px)" srcset="images/Astronauta-gg.jpg" type="image/jpg">
+        <source media="(max-width: 2030px)" srcset="images/Astronauta-xg.jpg" type="image/jpg">
+        <img src="images/Astronauta-xgg.jpg" alt="solo lunar panôramica">
+    </picture>
+</body>
+</html>

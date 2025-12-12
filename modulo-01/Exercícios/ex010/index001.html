@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabalhando com links</title>
+    <link rel="shortcut icon" href="wrench.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <h1>Usando links externos</h1>
+
+    <p>
+      Você pode acessar o meu
+      <a
+        href="https://github.com/victormanduca?tab=repositories"
+        target="_blank"
+        rel="external"
+        >repositório publico no Github.</a
+      >
+    </p>
+
+    <p>
+      Você também pode acessar o
+      <a href="https://www.youtube.com" target="_blank" rel="external"
+        >Youtube</a
+      >
+      para mais informações.
+    </p>
+
+    <p>
+      Entre essas aspas eu posso colocara URL do site onde quero ser
+      redirecionado, seja ele innterno ou externo.<a href="URL aqui"></a>
+    </p>
+    <p>
+      Dentro da tag target eu posso escolher <code>'_blank'</code> que abre o
+      link em uma nova guia e <code>'_self'</code> que é o padrão de abri o link
+      a mesma guia em que o site está aberto<a href="" target="_blank"></a>
+    </p>
+    <p>
+      Dentro da tag <code>rel</code> eu posso definir o tipo de link para a
+      facíl leitura do navegador. Possso escolher entre <code>'next'</code>,
+      <code>'prev'</code>, <code>'author'</code>, <code>'external'</code> (mais
+      comun) e
+      <code>'nofollow'</code>
+      <a href="" rel="external"></a>
+    </p>
+    <!--
+        ‣next indica que o link é para a próxima parte do documento atual
+        ‣prev indica que o link é para a parte anterior do documento atual
+        ‣author indica que é um link para o site do autor do artigo atual
+        ‣external indica que é um link para outro site que não faz parte do site atual
+        ‣ nofollow indica que é um link para um site não endossado, como um link pago
+        -->
+
+    <hr>
+    <h1>Usando links internos</h1>
+    <p>
+      Esta é aprimeira página do site. Se você quiser pode acessar também a
+      minha <a href="pag002.html" rel="next">segunda página</a><hr>
+
+      <h1>Links para Download</h1>
+      <ul type="square">
+        <li><a href="livro/10 - Ligações em toda parte.pdf" target="_blank" download="10 - Ligações em toda parte">Download do livro em PDF</a></li>
+
+        <li><a href="livro/10 - Ligações em toda parte.zip" download="10 - Ligações em toda parte">Download do livro em ZIP</a></li><br>
+
+        <li><a href="livro/teste.html" download="teste">Teste de arquivo .HTML</a></li>
+      </ul>
+    </p>
+  </body>
+</html>
